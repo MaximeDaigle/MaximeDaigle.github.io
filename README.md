@@ -1,1 +1,1 @@
-maximeDaigle.github.io
+maximedaigle.github.io
