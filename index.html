@@ -1,111 +1,189 @@
-<html>
-	<head>
-		<title> Maxime Daigle </title>
-		<link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
-		<link rel="stylesheet" href="./stylesheets/style.css">
-		<script type="text/javascript" src="./javascript/jquery-2.1.3.min.js"></script>
-		<script type="text/javascript" src="./javascript/bootstrap.min.js"></script>
-		<script type="text/javascript" src="./javascript/script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maxime Daigle</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
-		<meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no">
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<div>
-						<h1> Maxime Daigle </h1>
-					</div>
-					<hr class="no-bot-margin">
-					<div class="navbar navbar-default navbar-clear no-bot-margin" role="navigation">
-						<ul class="nav navbar-nav">
-							<li><a href="#about">About</a></li>
-							<li><a href="#experience">Experience</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<h3 id="about"> About</h3>
-					<p> I'm a Mathematics and Computer Science student at the <a href='http://www.umontreal.ca/english/'>Université de Montreal</a>. I'm interested in statistics, data science and machine learning.</p>
-					
-					<h3 id="experience"> Experience </h3>
-										
-					<h4> Canada research chair in Healthcare Analytics and Logistics </h4>
-					<h5> Research intern </h5>
-					<h6> IVADO Undergraduate Research Scholarships (Canada First Research Excellence Fund) </h6>
-					<p> I worked on a Multi-Objective Combinatorial Optimization problem in the <a href='http://hanalog.polymtl.ca/en/'> Hanalog </a> laboratory. Specifically, I worked on finding the best way to compromise between the multiple objectives. The research is done in partnership with <a href='https://www.alayacare.com/'> AlayaCare</a>. The algorithm that I worked on enables <a href='http://www.marketwired.com/press-release/-2240167.htm'> more home care visits</a>. </p>
-					
-					<h4> Government of Canada </h4>
-					<h5> Cloud Computing and Devops Programmer </h5>
-					<p> I joined the Chief Information and Security Branch of the <a href='https://www.nrcan.gc.ca/home'> Natural Resources Canada </a> federal department. I reverse-engineered servers and created a modified version of them in the cloud. </p>
-					
-					<h3 id="projects"> Projects </h3>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/cnn-convex-nonconvex'> Convolutional neural network on convex-nonconvex dataset </a> <span class="small"> Pytorch </span> </h4>
-					<p> Larochelle et al. (2007) did an empirical evaluation of deep architectures. They obtained an error rate of 18.63 and 18.41 using Deep Belief Networks (DBN-3) and Stacked Autoassociators (SAA-3) on the convex nonconvex dataset. In this notebook, I give a 3-layer cnn obtaining an error rate of 1.28. </p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/Density_estimation'> Density estimator </a> <span class="small"> Python </span> </h4>
-					<p> I implemented two types of estimator, a diagonal Gaussian parametric density estimator and a Parzen density estimator with an isotropic Gaussian kernel. Then, I used them on the iris flower dataset to estimate the density of different features. </p>
-										
-					<h4> <a href='https://github.com/MaximeDaigle/quick_draw'> Quick Draw </a> <span class="small"> Pytorch </span> </h4>
-					<p> Google has collected a series of hand-drawn images corresponding to a number of categories in their Quick, Draw! project. The dataset used in this project is a modified subset of this dataset. The dataset contains images that aren't always centered and straight, neither are they free of noisy artifacts. I use a modified Resnet18 to classify the doodles. </p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/metric_modification_comparison'> Effect of changing the metric used in KNN, PCoA and Isomap </a> <span class="small"> Scikit-learn </span> </h4>
-					<p> KNN, PCoA and Isomap are algorithms that use the euclidean distance. In this notebook, I replace the euclidean distance with two other metrics and look at the effect on the performance of the algorithms. Also, to compare the performance of different dimensionality reductions, I suggest a score based on the Kendall tau distance.</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/sudoku'> Markov Chain Monte Carlo </a> <span class="small"> Python </span> </h4>
-					<p> 3 algorithms to solve sudoku puzzles: <a href='https://en.wikipedia.org/wiki/Hill_climbing'>Hill Climbing</a> (an algorithm that finds the local optima), <a href='https://en.wikipedia.org/wiki/Simulated_annealing'>Simulated annealing</a> (an algorithm in the <a href='https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo'>Markov Chain Monte Carlo</a> family) and <a href='https://en.wikipedia.org/wiki/Constraint_satisfaction'>Constraint propagation</a>.</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/Neural-network-from-scratch'> Neural network from scratch </a> <span class="small"> Numpy </span> </h4>
-					<p> Implement a neural network (with one hidden layer) for multiclass classification. The implementation is done with only numpy. The calculation used to implement front propagation, back propagation and gradient descent are shown in the pdf file. The neural network correctly classifies 100% of the test set of the circles dataset. </p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/Word-sense-Disambiguation'> Word-sense Disambiguation (NLP) </a> <span class="small"> Weka </span> </h4>
-					<p> Word-sense disambiguation (<a href='https://en.wikipedia.org/wiki/Word-sense_disambiguation'>WSD</a>) is an open problem of natural language processing. WSD is identifying which sense of a word (i.e. meaning) is used in a sentence, when the word has multiple meanings. In this project, a Naïve Bayes classifier, a Decision Tree, a SVM and a neural network are trained to identify which of the 6 meaning of the word 'interest' is used in a sentence.</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/UltimateTic-Tac-Toe'> Monte Carlo tree search </a> <span class="small"> Python </span> </h4>
-					<p> This program uses <a href='https://en.wikipedia.org/wiki/Monte_Carlo_tree_search'> Monte Carlo tree search </a>  (which is notably used in <a href='https://en.wikipedia.org/wiki/AlphaGo'> AlphaGo's algorithm</a>) to find the next move to do in a game that has more than 10^50 possible move combinations (ultimate tic-tac-toe).</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/Inference-in-Bayesian-Network'> Inference in Bayesian Network </a> <span class="small"> Python </span> </h4>
-					<p> Use two methods to compute approximate inference in bayesian networks, rejection sampling and likelihood weighting.</p>
-						
-					<h4> <a href='https://github.com/MaximeDaigle/McHacks2017'> VickSick </a> <span class="small"> Python </span> </h4>
-					<p> An application that give the ability to text an AI to diagnose your symptoms. The application asks questions based on the previous answers to precise the symptoms until it reaches a good level of confidence that it has found the disease. It was made with <a href='https://www.twilio.com/'> twilio </a> and <a href='http://www.infermedica.com/'> infermedica </a> as a part of McHacks 2017.</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/SpellChecker'> Spell Checker </a> <span class="small"> Python </span> </h4>
-					<p> The program takes a txt file as a dictionary (any languages wrote with UTF-8 symbol). Then, it takes a txt file as an input, spellchecks the sentences and suggests correction. It uses a hash table with a <a href ='http://www.csd.uwo.ca/courses/CS2210b/Lecture5.pdf'> polynomial accumulation </a> hash function written with <a href= 'https://en.wikipedia.org/wiki/Horner%27s_method'> Horner's rule</a>.</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/android'> Best Buy app </a> <span class="small"> Android Studio (java) </span> </h4>
-					<p> An android application to shop at Best Buy. (<a href='https://drive.google.com/file/d/0BwFg9-XyjkxINVAzWWpYMHVMUjA/view?usp=sharing'>powerpoint</a> that presents the app)  </p>
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="James Lee" />
+            <div class="profile-content float-left">
+                <h1 class="name">Maxime Daigle</h1>
+                <h2 class="desc">Graduate Student</h2>   
+                <ul class="social list-inline">
+					<li class="list-inline-item"><a href="https://github.com/MaximeDaigle?tab=repositories"><i class="fab fa-github-alt"></i></a></li>   
+                    <li class="list-inline-item"><a href="https://twitter.com/MaximeMDaigle"><i class="fab fa-twitter"></i></a></li>                   
+                    <!--<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>-->
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="mailto:maximedaigle95@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I'm a graduate student in Machine Learning at Université de Montréal and Mila. Before that, I obtained a Bachelor's in Mathematics and Computer Science. I like probabilities, stochastic process, and randomness. I'm interested in the different fields related to decision making, e.g. operational research, game theory, and especially reinforcement learning. </p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+				<section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Data scientist - <span class="place">Government of Canada</span></h3>
+                                <p>I built a combinatorial optimization solution to maximize the number of inspections done in a year while keeping in check the time and cost required for long distance inspections. I also did more typical data science tasks such as cleaning and visualizing data, and communicating findings to executives.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Research intern - <span class="place"><a href="http://hanalog.polymtl.ca/en/">Hanalog (Canada research chair in Healthcare Analytics and Logistics)</a></span></h3>
+								<h4 class="title"><span class="year"><span></h4>
+                                <p>For this internship, I received the IVADO Undergraduate Research Scholarships (Canada First Research Excellence Fund). I worked on a Multi-Objective Combinatorial Optimization problem in the Hanalog laboratory. Specifically, I worked on finding the best way to compromise between the multiple objectives. The research was done in partnership with <a href="https://www.alayacare.com/">AlayaCare</a>. The algorithm that I worked on enables <a href="https://www.alayacare.com/blog/alayacare-launches-schedule-and-route-optimization-features-to-enable-more-home-care-visits">more home care visits.</a></p> 
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Cloud Computing and Devops Programmer - <span class="place">Government of Canada</span></h3>
+                                <p>In the Chief Information and Security Branch of the Natural Resources Canada federal department, I reverse-engineered servers and created a modified version of them in the cloud.</p>
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Selected Projects</h2>
+                        <div class="content">    
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/MaximeDaigle/reinforcement-learning-tidbits/blob/master/crossentropy_method.ipynb" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-1.png" alt="taxi-v2" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/MaximeDaigle/reinforcement-learning-tidbits/blob/master/crossentropy_method.ipynb" target="_blank">Cross-entropy method on Taxi-v2 from OpenAi Gym</a></h3>
+                                    <p class="mb-2">I implemented the <a href="https://en.wikipedia.org/wiki/Cross-entropy_method">cross-entropy</a> method to solve <a href="https://gym.openai.com/envs/Taxi-v2/">Taxi-v2</a> from OpenAi Gym.</p>
+                                    <p><a class="more-link" href="https://github.com/MaximeDaigle/reinforcement-learning-tidbits/blob/master/crossentropy_method.ipynb" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/MaximeDaigle/UltimateTic-Tac-Toe" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-2.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/MaximeDaigle/UltimateTic-Tac-Toe" target="_blank">Monte Carlo tree search</a></h3>
+                                    <p class="mb-2">This program uses Monte Carlo tree search (which is notably used in AlphaGo's algorithm) to find the next move to do in a game that has more than 10^50 possible move combinations (ultimate tic-tac-toe).</p>
+                                    <p><a class="more-link" href="https://github.com/MaximeDaigle/UltimateTic-Tac-Toe" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/MaximeDaigle/quick_draw" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-3.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/MaximeDaigle/quick_draw" target="_blank">Hand-drawn images classification</a></h3>
+                                    <p class="mb-2">Google has collected a series of hand-drawn images corresponding to a number of categories in their Quick, Draw! project. The dataset used in this project is a modified subset of this dataset. The dataset contains images that aren't always centered and straight, neither are they free of noisy artifacts. I use a modified Resnet18 to classify the images.</p>
+                                    <p><a class="more-link" href="https://github.com/MaximeDaigle/quick_draw" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/MaximeDaigle/Density_estimation" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/MaximeDaigle/Density_estimation" target="_blank">Density estimator</a></h3>
+                                    <p class="mb-2">I implemented two types of estimator, a diagonal Gaussian parametric density estimator and a Kernel density estimator with an isotropic Gaussian kernel. Then, I used them on the iris flower dataset to estimate the density of different features.</p>
+                                    <p><a class="more-link" href="https://github.com/MaximeDaigle/Density_estimation" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/MaximeDaigle/Word-sense-Disambiguation" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-5.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/MaximeDaigle/Word-sense-Disambiguation" target="_blank">Word-sense Disambiguation</a></h3>
+                                    <p class="mb-2"> Word-sense disambiguation (WSD) is an open problem of natural language processing. WSD is identifying which sense of a word (i.e. meaning) is used in a sentence, when the word has multiple meanings. In this project, a Naïve Bayes classifier, a Decision Tree, a SVM and a neural network are trained to identify which of the 6 meaning of the word 'interest' is used in a sentence.</p>
+                                    <p><a class="more-link" href="https://github.com/MaximeDaigle/Word-sense-Disambiguation" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/MaximeDaigle/Inference-in-Bayesian-Network" target="_blank">Inference in Bayesian Network</a></h3>
+                                <p class="summary">I use two methods to compute approximate inference in bayesian networks, rejection sampling and likelihood weighting.</p>
+                                <p><a class="more-link" href="https://github.com/MaximeDaigle/Inference-in-Bayesian-Network" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//item-->
+                            
+							<div class="item">
+                                <h3 class="title"><a href="https://github.com/MaximeDaigle/Neural-network-from-scratch" target="_blank">Neural network by hand</a></h3>
+                                <p class="summary">I implemented by hand a neural network (with one hidden layer) for multiclass classification. The implementation is done with only numpy. The calculation used to implement front propagation, back propagation and gradient descent are shown in the pdf file. The neural network correctly classifies 100% of the test set of the circles dataset.</p>
+                                <p><a class="more-link" href="https://github.com/MaximeDaigle/Neural-network-from-scratch" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//item-->		
 
-					<h4> <a href='https://github.com/MaximeDaigle/Graph-isomorphism'> Graph isomorphism </a> <span class="small"> Python </span> </h4>
-					<p> It solves the <a href='https://en.wikipedia.org/wiki/Graph_isomorphism'> graph isomorphism </a> problem (belonging to NP) with a <a href='https://en.wikipedia.org/wiki/Backtracking'> backtracking algorithm</a>.</p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/Maximum-independent-set'> Maximum independent set (stable set) </a> <span class="small"> Python </span> </h4>
-					<p> It solves the maximum independent set problem that is an NP-hard optimization problem. In graph theory, an <a href='https://en.wikipedia.org/wiki/Independent_set_(graph_theory)'> independent set</a> or stable set is a set of vertices in a graph, no two of which are adjacent. </p>
-					
-					<h4> <a href='https://github.com/MaximeDaigle/GameOfLifeModified'> Game of life modified </a> <span class="small"> Python </span> </h4>
-					<p> This version has 3 types of live cell (Red, Green, Blue) and you can change the rules for each type of cell separately. </p>
-						
-					<h4> <a href='https://github.com/MaximeDaigle/Quoridor'>Quoridor</a> <span class="small">Swing (Java) </span> </h4>
-					<p> Quoridor is played on a 9x9 game board. Each player begins at the center space of one edge of the board. The objective is to be the first player to move their pawn to any space on the opposite side of the gameboard from which it begins. The distinguishing characteristic of Quoridor is its twenty walls. The walls are divided equally among the players at the start of the game, and once placed, cannot be moved or removed. In this project, I did the user interface using Model-View-Controller architecture.</p>
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/MaximeDaigle/metric_modification_comparison" target="_blank">Effect of changing the metric used in KNN, PCoA and Isomap</a></h3>
+                                <p class="summary">KNN, PCoA and Isomap are algorithms that use the euclidean distance. In this notebook, I replace the euclidean distance with two other metrics and look at the effect on the performance of the algorithms. Also, to compare the performance of different dimensionality reductions, I suggest a score based on the Kendall tau distance.</p>
+                                <p><a class="more-link" href="https://github.com/MaximeDaigle/metric_modification_comparison" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//item-->
+							
+							<div class="item">
+                                <h3 class="title"><a href="https://github.com/MaximeDaigle/sudoku" target="_blank">Solving sudoku puzzles</a></h3>
+                                <p class="summary">3 algorithms to solve sudoku puzzles: Hill Climbing (an algorithm that finds the local optima), Simulated annealing (an algorithm in the Markov Chain Monte Carlo family) and Constraint propagation.</p>
+                                <p><a class="more-link" href="https://github.com/MaximeDaigle/sudoku" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                            </div><!--//item-->
+                            
+                            <a class="btn btn-cta-secondary" href="https://github.com/MaximeDaigle?tab=repositories">More projects</a>
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+            </div><!--//primary-->
 
-					<h4> <a href='https://github.com/MaximeDaigle/Labyrinthe'>Invisible Labyrinth</a>  <span class="small">Java</span> </h4>
-					<p> It creates a random labyrinth in a shell. You have only a few seconds to memorize it before the walls become invisible. You have to go to the end with a limited number of lives.</p>
+        </div><!--//row-->
+    </div><!--//masonry-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
 
-					<h4> <a href='https://github.com/MaximeDaigle/EightQueens_Puzzle'>Eigth Queens Puzzle</a><span class="small"> Java </span> </h4>
-					<p> The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other. Thus, a solution requires that no two queens share the same row, column, or diagonal. This program finds 11 solutions.</p>
-					
-					<h4> <a href="https://github.com/MaximeDaigle/AddictionSolitaire">Addiction Solitaire</a></a><span class="small"> JavaScript </span> </h4>
-					<p> The goal is to create a row for each suit, where each row starts with the deuce on the left and the king on the right. Three reshuffles are allowed for times when you get stuck. Reshuffling affects all cards not in their proper position.  </p>
-
-					<h3 id="contact"> Contact Me </h3>
-					<p> You can <a href="mailto:maximedaigle95@gmail.com">email me</a> or find me on <a href="http://github.com/MaximeDaigle">github</a> or <a href="https://twitter.com/MaximeMDaigle">twitter</a>.</p>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
